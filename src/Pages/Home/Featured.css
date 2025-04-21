@@ -1,0 +1,8 @@
+.backgroundImage {
+    background: url("../../assets/home/featured.jpg");
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(20px); */
+    background-attachment: fixed;
+    
+}
