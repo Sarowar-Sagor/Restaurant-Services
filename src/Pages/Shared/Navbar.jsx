@@ -9,7 +9,7 @@ const Navbar = () => {
 
     const { user, logOut } = useContext(AuthContext);
     const [cart] = useCart();
-    const [isAdmin] = useAdmin();
+    // const [isAdmin] = useAdmin();
 
     const handleSignOut = () => {
         logOut()
@@ -21,13 +21,13 @@ const Navbar = () => {
         <li><NavLink to={"/"}>Home</NavLink></li>
         <li><NavLink to={"/menu"}>Our Menu</NavLink></li>
         <li><NavLink to={"/order/salad"}>Order Food</NavLink></li>
-        {
+        {/* {
             user && isAdmin && <li><NavLink to={"/dashboard/adminHome"}>Dashboard</NavLink></li>
         }
 
         {
             user && !isAdmin && <li><NavLink to={"/dashboard/userHome"}>Dashboard</NavLink></li>
-        }
+        } */}
         
         <li><NavLink to={"/dashboard/cart"}>
             <TiShoppingCart className="text-xl" /> <div className="badge badge-sm badge-secondary">+{cart.length}</div>
