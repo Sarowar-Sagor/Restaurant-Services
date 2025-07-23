@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { TiShoppingCart } from "react-icons/ti";
 import useCart from "../../Hooks/useCart";
-import useAdmin from "../../Hooks/useAdmin";
+import useAdmin from "../../Hooks/useAdmin"; 
 
 const Navbar = () => {
 
